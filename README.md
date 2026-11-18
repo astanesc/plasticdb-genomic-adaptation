@@ -54,17 +54,6 @@ Detailed results are available in [Results](docs/results.md).
 ## Models
 Adapted model checkpoints are available through Hugging Face: [https://huggingface.co/astanesc/](https://huggingface.co/astanesc/)
 
-## Repository Scope
-This repository contains the scientific code associated with the study, including:<br>
-- PlasticDB-derived sequence preparation
-- genomic foundation-model adaptation
-- embedding extraction
-- assembled-genome clustering evaluation
-- raw-read clustering evaluation
-- promoter fine-tuning and evaluation
-- statistical analysis<br>
-Institutional infrastructure, credentials, cloud provisioning, and Azure-specific deployment scripts are not included.
-
 ## Software Attribution
 This work builds on the public implementations of [DNABERT-2](https://github.com/MAGICS-LAB/DNABERT_2) and [DNABERT-S](https://github.com/MAGICS-LAB/DNABERT_S)<br>
 Plastic degradation-associated microorganisms were identified using [PlasticDB](https://plasticdb.org/).<br>
