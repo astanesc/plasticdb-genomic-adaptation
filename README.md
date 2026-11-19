@@ -48,7 +48,6 @@ Detailed results are available in [Results](docs/results.md).
 - [Methods](docs/methods.md) - adaptation corpora, contrastive training, and hyperparameters
 - [Evaluation](docs/evaluation.md) - embedding-space and promoter-classification protocols
 - [Results](docs/results.md) - assembled genomes, raw reads, local embedding behavior, and promoter results
-- [Limitations](docs/limitations.md) - interpretation, confounding factors, and experimental controls
 - [References](docs/references.md) - published papers and external resources
 
 ## Models
