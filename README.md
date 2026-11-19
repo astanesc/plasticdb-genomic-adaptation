@@ -5,7 +5,7 @@
 [![DNABERT-S](https://img.shields.io/badge/Backbone-DNABERT--S-55A868)](https://github.com/MAGICS-LAB/DNABERT_S)
 [![Models](https://img.shields.io/badge/Hugging%20Face-Models-yellow)](https://huggingface.co/astanesc)
 
-**Adaptation of Genomic Foundation Models for Plastic Degradation-Associated Bacterial Sequence Representation**  
+[**Adaptation of Genomic Foundation Models for Plastic Degradation-Associated Bacterial Sequence Representation**](https://ieeexplore.ieee.org/document/11760871/)  
 *2026 International Conference on Machine Learning and Applications (IEEE ICMLA 2026)*
 
 ## Overview
@@ -14,8 +14,8 @@ Training genomic foundation models from scratch requires large sequence corpora 
 
 We adapt two related genomic foundation models:
 
-- **DNABERT-2**, a general multi-species genomic foundation model.
-- **DNABERT-S**, a species-aware model initialized from DNABERT-2 and further trained using curriculum contrastive learning.
+- **[DNABERT-2](https://github.com/MAGICS-LAB/DNABERT_2)**, a general multi-species genomic foundation model.
+- **[DNABERT-S](https://github.com/MAGICS-LAB/DNABERT_S)**, a species-aware model initialized from [DNABERT-2](https://github.com/MAGICS-LAB/DNABERT_2) and further trained using curriculum contrastive learning.
 
 The adaptation domain is constructed from bacterial genomic sequences associated with plastic biodegradation using [PlasticDB](https://plasticdb.org/).
 
@@ -23,13 +23,8 @@ The adaptation domain is constructed from bacterial genomic sequences associated
 
 ## Approach
 
-Four PlasticDB-derived adaptation corpora are evaluated: **complete genomes | chromosomes | scaffolds | contigs**
-Both DNABERT-2 and DNABERT-S are adapted using curriculum contrastive learning and evaluated in two complementary ways:
-
-1. **Embedding-space evaluation** using three recently sequenced bacterial isolates, assembled genomes, and PacBio raw reads.
-2. **Downstream task evaluation** using human and prokaryotic promoter-classification benchmarks.
-
-See [Methods](docs/methods.md) and [Evaluation](docs/evaluation.md) for details.
+Four PlasticDB-derived adaptation corpora are evaluated: **complete genomes | chromosomes | scaffolds | contigs**<br>
+Both [DNABERT-2](https://github.com/MAGICS-LAB/DNABERT_2) and [DNABERT-S](https://github.com/MAGICS-LAB/DNABERT_S) are adapted using curriculum contrastive learning and evaluated in two complementary ways: (1) **Embedding-space evaluation** using three recently sequenced bacterial isolates, assembled genomes, and PacBio raw reads, and (2) **Downstream task evaluation** using human and prokaryotic promoter-classification benchmarks. See [Methods](docs/methods.md) and [Results](docs/results.md) for details.
 
 ## Key Findings
 
@@ -40,8 +35,7 @@ See [Methods](docs/methods.md) and [Evaluation](docs/evaluation.md) for details.
 - Adaptation effects remain visible on PacBio raw sequencing reads.
 - Local embedding changes can be biologically interpretable without implying plastic-degradation function.
 - Previously learned information remains usable for promoter classification, although downstream gains are heterogeneous and not systematic.
-
-Detailed results are available in [Results](docs/results.md).
+- Detailed results are available in [Results](docs/results.md).
 
 ## Documentation
 - [Methods](docs/methods.md) - adaptation corpora, contrastive training, and hyperparameters
@@ -50,13 +44,11 @@ Detailed results are available in [Results](docs/results.md).
 ## Models
 Adapted model checkpoints are available through Hugging Face: [https://huggingface.co/astanesc/](https://huggingface.co/astanesc/)
 
-## Software Attribution
+## Software Attribution and Citations
 This work builds on the public implementations of [DNABERT-2](https://github.com/MAGICS-LAB/DNABERT_2) and [DNABERT-S](https://github.com/MAGICS-LAB/DNABERT_S)<br>
-Plastic degradation-associated microorganisms were identified using [PlasticDB](https://plasticdb.org/).<br>
-Please cite the corresponding published papers listed in [References](docs/references.md).
-
-### Citation
-If you use this repository, adapted models, or results from this work, please cite:<br>
-**Adaptation of Genomic Foundation Models for Plastic Degradation-Associated Bacterial Sequence Representation.** <br>
-*2026 International Conference on Machine Learning and Applications (IEEE ICMLA 2026).*<br>
-IEEE Xplore:  https://ieeexplore.ieee.org/document/11760871/
+Plastic degradation-associated microorganisms were identified using [PlasticDB](https://plasticdb.org/).<br><br>
+If you use this repository, adapted models, the three bacterial genomes, or results from this work, please cite:<br>
+- [Adaptation of Genomic Foundation Models for Plastic Degradation-Associated Bacterial Sequence Representation](https://ieeexplore.ieee.org/document/11760871/)
+- [*Sphingobium yanoikuyae* CC4533](https://doi.org/10.1128/mra.01181-25)
+- [*Acidovorax temperans* LMJ](https://doi.org/10.1128/mra.01293-23)
+- [*Microbacterium* sp. Clip185](https://doi.org/10.1128/mra.01348-24)
