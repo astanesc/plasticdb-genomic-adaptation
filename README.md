@@ -44,10 +44,8 @@ See [Methods](docs/methods.md) and [Evaluation](docs/evaluation.md) for details.
 Detailed results are available in [Results](docs/results.md).
 
 ## Documentation
-
 - [Methods](docs/methods.md) - adaptation corpora, contrastive training, and hyperparameters
 - [Results](docs/results.md) - assembled genomes, raw reads, local embedding behavior, and promoter results
-- [References](docs/references.md) - published papers and external resources
 
 ## Models
 Adapted model checkpoints are available through Hugging Face: [https://huggingface.co/astanesc/](https://huggingface.co/astanesc/)
