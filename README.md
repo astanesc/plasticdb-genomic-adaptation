@@ -45,7 +45,7 @@ Both [DNABERT-2](https://github.com/MAGICS-LAB/DNABERT_2) and [DNABERT-S](https:
 Adapted model checkpoints are available through Hugging Face: [https://huggingface.co/astanesc/](https://huggingface.co/astanesc/)
 
 ## Software Attribution and Citations
-This work builds on the public implementations of [DNABERT-2](https://github.com/MAGICS-LAB/DNABERT_2) and [DNABERT-S](https://github.com/MAGICS-LAB/DNABERT_S)<br>
+This work builds on the public implementation of [DNABERT-2](https://github.com/MAGICS-LAB/DNABERT_2) and [DNABERT-S](https://github.com/MAGICS-LAB/DNABERT_S).<br>
 Plastic degradation-associated microorganisms were identified using [PlasticDB](https://plasticdb.org/).<br><br>
 If you use this repository, adapted models, the three bacterial genomes, or results from this work, please cite:<br>
 - [Adaptation of Genomic Foundation Models for Plastic Degradation-Associated Bacterial Sequence Representation](https://ieeexplore.ieee.org/document/11760871/)
